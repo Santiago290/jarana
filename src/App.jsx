@@ -1,5 +1,5 @@
 import './App.css';
-import { Routes, Route, Navigate, BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Home from './pages/Home';
 import Nav from './components/Nav';
 
@@ -9,7 +9,7 @@ function App() {
       <Nav /> 
       <Routes>
         <Route path="/" element={<Home />} /> 
-        <Route path="*" element={<Navigate to="/" />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </Router>
   );
