@@ -2,72 +2,62 @@ import img1 from '../src/assets/img/img1.jpg'
 import img2 from '../src/assets/img/img2.jpg'
 import img3 from '../src/assets/img/img3.jpg'
 import img4 from '../src/assets/img/img4.jpg'
-
-export const namePage = [
-    { href: '/', name:'home' },
-    { href: '/', name:'about' },
-    { href: '/', name:'menu' }
-];
-
-export const homePage = {
-    title: "Home",
-    subtitle: "sadasn asdpjaspo jdasd asoldjasp dasdasopdjas"
-}
+import jaranaCuadrado from '../src/assets/img/jaranaCuadrado.png'
 
 export const secciones = [
     {
         title: "Identidad y Branding",
         descripcion: "Nuestra carta de presentación al mundo siempre debe verse bien.",
         subtitles: [
-            { subtitle: "Diseño", image: "src/assets/img/jaranaCuadrado.png" },
-            { subtitle: "Social Media Management", image: "src/assets/img/jaranaCuadrado.png" },
-            { subtitle: "Creación de Contenido", image: "src/assets/img/jaranaCuadrado.png" },
-            { subtitle: "Producción Audiovisual", image: "src/assets/img/jaranaCuadrado.png" },
-            { subtitle: "Reels", image: "src/assets/img/jaranaCuadrado.png" },
+            { subtitle: "Diseño", image: jaranaCuadrado },
+            { subtitle: "Social Media Management", image: jaranaCuadrado },
+            { subtitle: "Creación de Contenido", image: jaranaCuadrado },
+            { subtitle: "Producción Audiovisual", image: jaranaCuadrado },
+            { subtitle: "Reels", image: jaranaCuadrado },
         ]
     },
     {
         title: "Desarrollo Web",
         descripcion: "Nuestra carta de presentación al mundo siempre debe verse bien.",
         subtitles: [
-            { subtitle: "Diseño", image: "src/assets/img/jaranaCuadrado.png" },
-            { subtitle: "Social Media Management", image: "src/assets/img/jaranaCuadrado.png" },
-            { subtitle: "Creación de Contenido", image: "src/assets/img/jaranaCuadrado.png" },
-            { subtitle: "Producción Audiovisual", image: "src/assets/img/jaranaCuadrado.png" },
-            { subtitle: "Reels", image: "src/assets/img/jaranaCuadrado.png" },
+            { subtitle: "Diseño", image: jaranaCuadrado },
+            { subtitle: "Social Media Management", image: jaranaCuadrado },
+            { subtitle: "Creación de Contenido", image: jaranaCuadrado },
+            { subtitle: "Producción Audiovisual", image: jaranaCuadrado },
+            { subtitle: "Reels", image: jaranaCuadrado },
         ]
     },
     {
         title: "Contenido y Social media",
         descripcion: "Nuestra carta de presentación al mundo siempre debe verse bien.",
         subtitles: [
-            { subtitle: "Diseño", image: "src/assets/img/jaranaCuadrado.png" },
-            { subtitle: "Social Media Management", image: "src/assets/img/jaranaCuadrado.png" },
-            { subtitle: "Creación de Contenido", image: "src/assets/img/jaranaCuadrado.png" },
-            { subtitle: "Producción Audiovisual", image: "src/assets/img/jaranaCuadrado.png" },
-            { subtitle: "Reels", image: "src/assets/img/jaranaCuadrado.png" },
+            { subtitle: "Diseño", image: jaranaCuadrado },
+            { subtitle: "Social Media Management", image: jaranaCuadrado },
+            { subtitle: "Creación de Contenido", image: jaranaCuadrado },
+            { subtitle: "Producción Audiovisual", image: jaranaCuadrado },
+            { subtitle: "Reels", image: jaranaCuadrado },
         ]
     },
     {
         title: "Campañas Integrales",
         descripcion: "Nuestra carta de presentación al mundo siempre debe verse bien.",
         subtitles: [
-            { subtitle: "Diseño", image: "src/assets/img/jaranaCuadrado.png" },
-            { subtitle: "Social Media Management", image: "src/assets/img/jaranaCuadrado.png" },
-            { subtitle: "Creación de Contenido", image: "src/assets/img/jaranaCuadrado.png" },
-            { subtitle: "Producción Audiovisual", image: "src/assets/img/jaranaCuadrado.png" },
-            { subtitle: "Reels", image: "src/assets/img/jaranaCuadrado.png"},
+            { subtitle: "Diseño", image: jaranaCuadrado },
+            { subtitle: "Social Media Management", image: jaranaCuadrado },
+            { subtitle: "Creación de Contenido", image: jaranaCuadrado},
+            { subtitle: "Producción Audiovisual", image: jaranaCuadrado },
+            { subtitle: "Reels", image: jaranaCuadrado},
         ]
     },
     {
         title: "Social Analytics",
         descripcion: "Nuestra carta de presentación al mundo siempre debe verse bien.",
         subtitles: [
-            { subtitle: "Diseño", image: "src/assets/img/jaranaCuadrado.png" },
-            { subtitle: "Social Media Management", image: "src/assets/img/jaranaCuadrado.png" },
-            { subtitle: "Creación de Contenido", image: "src/assets/img/jaranaCuadrado.png" },
-            { subtitle: "Producción Audiovisual", image: "src/assets/img/jaranaCuadrado.png" },
-            { subtitle: "Reels", image: "src/assets/img/jaranaCuadrado.png" },
+            { subtitle: "Diseño", image: jaranaCuadrado },
+            { subtitle: "Social Media Management", image: jaranaCuadrado },
+            { subtitle: "Creación de Contenido", image: jaranaCuadrado },
+            { subtitle: "Producción Audiovisual", image: jaranaCuadrado},
+            { subtitle: "Reels", image: jaranaCuadrado },
         ]
     }
 ]

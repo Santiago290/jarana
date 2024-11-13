@@ -26,13 +26,13 @@ const Proyectos = () => {
       <div className='w-[85%] md:w-[70%] xl:w-[57%] m-auto py-[55px]'>
         <h2 className='title text-white mx-auto'>PROYECTOS</h2>
         <div className='flex flex-wrap gap-1 justify-center mb-8'>
-                <button className='text-white text-[10px] border border-white py-1 px-2 rounded-full font-light' onClick={()=>clicker("Branding")}>Branding</button>
-                <button className='text-white text-[10px] border border-white py-1 px-2 rounded-full font-light' onClick={()=>clicker("Desarrollo Web")}>Desarrollo Web</button>
-                <button className='text-white text-[10px] border border-white py-1 px-2 rounded-full font-light' onClick={()=>clicker("Social Media")}>Social Media</button>
-                <button className='text-white text-[10px] border border-white py-1 px-2 rounded-full font-light' onClick={()=>clicker("Todos")}>Todos</button>
-                <button className='text-white text-[10px] border border-white py-1 px-2 rounded-full font-light' onClick={()=>clicker("Ilustración")}>Ilustración</button>
-                <button className='text-white text-[10px] border border-white py-1 px-2 rounded-full font-light' onClick={()=>clicker("Packaging")}>Packaging</button>
-                <button className='text-white text-[10px] border border-white py-1 px-2 rounded-full font-light' onClick={()=>clicker("Campañas")}>Campañas</button>
+                <button className='text-white text-[10px] border border-white py-1 px-2 rounded-full font-light hover:bg-rojo transition-colors duration-500' onClick={()=>clicker("Branding")}>Branding</button>
+                <button className='text-white text-[10px] border border-white py-1 px-2 rounded-full font-light hover:bg-rojo transition-colors duration-500' onClick={()=>clicker("Desarrollo Web")}>Desarrollo Web</button>
+                <button className='text-white text-[10px] border border-white py-1 px-2 rounded-full font-light hover:bg-rojo transition-colors duration-500' onClick={()=>clicker("Social Media")}>Social Media</button>
+                <button className='text-white text-[10px] border border-white py-1 px-2 rounded-full font-light hover:bg-rojo transition-colors duration-500' onClick={()=>clicker("Todos")}>Todos</button>
+                <button className='text-white text-[10px] border border-white py-1 px-2 rounded-full font-light hover:bg-rojo transition-colors duration-500' onClick={()=>clicker("Ilustración")}>Ilustración</button>
+                <button className='text-white text-[10px] border border-white py-1 px-2 rounded-full font-light hover:bg-rojo transition-colors duration-500' onClick={()=>clicker("Packaging")}>Packaging</button>
+                <button className='text-white text-[10px] border border-white py-1 px-2 rounded-full font-light hover:bg-rojo transition-colors duration-500' onClick={()=>clicker("Campañas")}>Campañas</button>
         </div>
         <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6'>
             {categoria.map((proyects,indice)=>(

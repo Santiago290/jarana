@@ -6,10 +6,11 @@ import Nav from './components/Nav';
 function App() {
   return (
     <Router>
-      <Nav /> 
+      <header className='m-auto font-poppins xl:w-[57%] md:w-[70%] sm:w-[85%] w-[85%]'>
+        <Nav /> 
+      </header>
       <Routes>
-        <Route path="/" element={<Home />} /> 
-        <Route path="*" element={<Navigate to="/" replace />} />
+        <Route path="/jarana" element={<Home />} />      
       </Routes>
     </Router>
   );
