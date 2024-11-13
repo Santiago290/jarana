@@ -1,0 +1,99 @@
+const e = require("express");
+const express = require("express");
+const router = express.Router();
+const path = require('path');
+const nodemailer = require("nodemailer");
+
+//Mailer
+//const {google} = require("googleapis");
+
+const userMailer = "santideza16@gmail.com"
+const contMailer = "efpp xpdo dtcn yclz"
+
+//Ruta
+router.get("/",(req,res)=>{
+    res.sendFile(path.join(__dirname, '../../cliente/index.html'));
+})
+
+router.post("/datosform",(req,res)=>{
+    const {nombre,empresa,email,celular,servicio,comentarios} = req.body;
+    const contentHTML = `
+        <h1>¡Correo Enviado de ${nombre}!</h1>
+        <p>Tu mensaje ha sido enviado exitosamente de la empresa ${empresa}, su email es ${email} y celular ${celular}, vengo para el servicio de ${servicio} y mi comentario es ${comentarios}</p>
+        <p>Gracias por contactarnos. Nos pondremos en contacto contigo pronto.</p>`
+
+    //Config para gmail
+    //const CLIENTT_ID: en google;
+    //const SECRET_CLIENT: en google;
+    //const REDIRECT_URI: en google;
+    //const REFRESH_TOKEN: en google; 
+    //const oAuth2Client = new google.auth.OAuth2(
+    //    CLIENTT_ID,SECRET_CLIENT,REDIRECT_URI
+    //)
+    //oAuth2Client.setCredentials({refresh_token: REFRESH_TOKEN});
+
+
+    async function sendMail(){
+        try{
+            //const accesoToken = await oAuth2Client.getAcessToken();
+            const transporter = nodemailer.createTransport({
+                host: "smtp.gmail.com",
+                auth: {
+                  //type:"OAuth2"
+                  //clientId:CLIENTID,
+                  //clientSecret: CLIENT-SECRET ,
+                  //refreshToken:  REFRESH_TOKEN,
+                  //accesoToken: accesoToken, 
+                  user: userMailer ,
+                  pass: contMailer ,
+                },
+            });
+            const mailOption = {
+                from: 'Pagina web Nodemailer <tu-correo@gmail.com>',
+                to: 'destinatario@ejemplo.com',
+                subject: "Nuevo usuario de Ratch",
+                html: contentHTML,
+            };
+        
+            await transporter.sendMail(mailOption)
+            return 
+          }catch(err){
+              console.log(err);
+          }
+    }
+    sendMail()
+        .then((result) => res.status(200).send("Enviado"))
+        .catch((error) => console.log(error))
+}) 
+
+module.exports=router;
+
+
+
+
+
+//Ingresar console google developer
+//Nuevo proyecto
+//Notificacions - Seleccionar proyecto
+//Habilitar api y servicios
+//GMAIL API y habilitar
+//Menunavegacion - panel para verificar
+//Pantalla de consentimiento
+//Externos y crear
+//Poner un nombre de pag y correo
+//Guardar y continuar
+//Ir a credenciales y crear
+//ID de cliente Oauth
+//Tipo de aplicacion:aplicacion web
+//Colocar nombre y poner Uri de redireccionamiento https://developers.google.com/oauthplayground/ y crear
+//Me genera id cliente y cliente secret
+//config - use credentiales seleccionar - Poner id y cliente secret
+//https://mail.google.com y autorizar api
+//Exchange autorithazion, y seguir en visual
+
+//const nodemailer = require("nodemailer");
+//const {google} = require("googleapis");
+//const CLIENT_ID="COLOCAR"
+//const CLIENT_SECRET="COLOCAR"
+//const REDIRECT_URI=https://developers.google.com/oauthplayground/
+//const REFRESH-TOKEN="COLOCAR"

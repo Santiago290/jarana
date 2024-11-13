@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box; 
+}
+
+.content{
+    margin: auto;
+}
+
+.content-vertical{
+    margin-top: 0;
+    margin-bottom: 0;
+}   
+
+@layer components{
+    .btn{
+        @apply bg-rojo cursor-pointer gap-4 rounded-full items-center;
+    }
+
+    .title{
+        @apply text-[11px] font-bold mb-6 text-center tracking-[0.3rem] smd:text-[15px] smd:mb-8 md:text-[20px] md:mb-16 xl:mb-24 xl:mt-10 xl:text-[25px] 2xl:text-[30px] 2xl:tracking-[0.6rem];
+    }
+}
