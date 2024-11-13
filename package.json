@@ -1,7 +1,7 @@
 {
   "name": "ratch-final",
   "private": true,
-  "homepage":"https://github.com/Santiago290/jarana.git",
+  "homepage":"https://github.com/Santiago290/jarana",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
