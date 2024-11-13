@@ -5,14 +5,14 @@ import Nav from './components/Nav';
 
 function App() {
   return (
-    <Router>
-      <header className='m-auto font-poppins xl:w-[57%] md:w-[70%] sm:w-[85%] w-[85%]'>
-        <Nav /> 
+    <BrowserRouter basename="/jarana">
+      <header className="m-auto font-poppins xl:w-[57%] md:w-[70%] sm:w-[85%] w-[85%]">
+        <Nav />
       </header>
       <Routes>
-        <Route path="/jarana" element={<Home />} />      
+        <Route path="/" element={<Home />} />
       </Routes>
-    </Router>
+    </BrowserRouter>
   );
 }
 
